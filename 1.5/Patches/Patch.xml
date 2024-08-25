@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[contains(graphicData/texPath, "Buildings/Ruin")]/designationCategory</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[contains(graphicData/texPath, "Buildings/Ruin")]</xpath>
+			<value>
+				<designationCategory>MO_Ruins_Des</designationCategory>
+			</value>
+		</nomatch>
+	</Operation>
+
+</Patch>
